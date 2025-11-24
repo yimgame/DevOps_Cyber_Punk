@@ -92,4 +92,5 @@ Este proyecto fue **codificado y asistido por GitHub Copilot**, utilizando model
 
 ---
 
-Hecho con 💜 y 🦾 código.
+Hecho con 💜 y 🦾 código para Yim.
+and Don't forget, just codig 4 fun !!!
