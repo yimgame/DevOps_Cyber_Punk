@@ -1,6 +1,6 @@
 # 🌐 Cyberpunk Developer Portfolio
 
-![Project Banner](<img width="1171" height="666" alt="image" src="https://github.com/user-attachments/assets/883ad73b-ce8b-461a-9b3a-796bcb40a47d" />)
+![Project Banner](attached_assets/generated_images/cyberpunk_neon_grid_hero_background.png)
 > *Un portafolio interactivo de alto rendimiento con estética Cyberpunk, construido para el futuro.*
 
 Este proyecto es una aplicación web full-stack diseñada para mostrar habilidades, proyectos y experiencia con una interfaz de usuario inmersiva y futurista. Combina animaciones fluidas, diseño responsivo y una arquitectura robusta.
@@ -16,17 +16,17 @@ Este proyecto es una aplicación web full-stack diseñada para mostrar habilidad
 
 ## 📸 Capturas de Pantalla
 
-¡Aquí es donde puedes mostrar tu proyecto! Reemplaza los enlaces de abajo con tus propias imágenes.
+¡Aquí es donde puedes mostrar tu proyecto!
 
-| Home / Hero Section | Skills Section |
-|:-------------------:|:--------------:|
-| ![Home](<img width="1171" height="666" alt="image" src="https://github.com/user-attachments/assets/d9606d33-746a-465f-b1be-fe4e77912b89" />) | ![Skills](<img width="1163" height="638" alt="image" src="https://github.com/user-attachments/assets/e8ab93ed-5530-4b68-a219-859d873354b3" />) |
-| *Vista principal con efecto glitch* | *Visualización de habilidades técnicas* |
+| Security Dashboard | DevOps Pipeline |
+|:------------------:|:---------------:|
+| ![Security Dashboard](attached_assets/generated_images/security_dashboard_project_thumbnail.png) | ![DevOps Pipeline](attached_assets/generated_images/devops_pipeline_project_thumbnail.png) |
+| *Monitorización de amenazas en tiempo real* | *Automatización de CI/CD* |
 
-| Projects Gallery | Contact Form |
-|:----------------:|:------------:|
-| ![Projects](<img width="1200" height="851" alt="image" src="https://github.com/user-attachments/assets/f6e600ac-b3ad-47b2-95e8-a4983aa73e1a" />) | ![Contact](<img width="1146" height="1000" alt="image" src="https://github.com/user-attachments/assets/f9a350f6-5ef1-441a-8250-74d34986a5f0" />) |
-| *Galería de proyectos interactiva* | *Formulario de contacto estilizado* |
+| Pentesting Tool | Hero Section |
+|:---------------:|:------------:|
+| ![Pentesting Tool](attached_assets/generated_images/pentesting_tool_project_thumbnail.png) | ![Hero Section](attached_assets/generated_images/cyberpunk_neon_grid_hero_background.png) |
+| *Framework de pruebas de penetración* | *Vista principal inmersiva* |
 
 ## 🛠️ Stack Tecnológico
 
