@@ -32,7 +32,7 @@ services:
   tunnel:
     image: cloudflare/cloudflared:latest
     restart: always
-    command: tunnel --no-autoupdate run --token eyJhIjoiNzNjZmIzOTZmZjRlZmRkNzcwNmZjMGMwZjY3ZTI2NDEiLCJ0IjoiMmM5YzI2MzctMmViOC00MzQ1LWIwNDAtMTU3ZTQ0YTdmNjE2IiwicyI6IllUZzFZMlJpWmpjdFpUWTFZaTAwWmpBMkxXRTFObU10WmpsaE1qRXdOVE5tWm1ReCJ9
+    command: tunnel --no-autoupdate run --token aca
     # Si usas el tunnel, no necesitas exponer el puerto 5000 de la app al mundo,
     # pero el tunnel debe poder ver el servicio 'app:5000'.
     networks:
