@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/app_db
+      - NODE_ENV=production
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=app_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Cloudflare Tunnel
+  # Para usar esto, necesitas un token de Cloudflare Tunnel.
+  # 1. Ve a Zero Trust > Access > Tunnels en Cloudflare.
+  # 2. Crea un tunnel y copia el token.
+  # 3. Reemplaza <TU_TOKEN_AQUI> con tu token real.
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    restart: always
+    command: tunnel --no-autoupdate run --token <TU_TOKEN_AQUI>
+    # Si usas el tunnel, no necesitas exponer el puerto 5000 de la app al mundo,
+    # pero el tunnel debe poder ver el servicio 'app:5000'.
+
+volumes:
+  postgres_data:
