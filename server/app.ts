@@ -1,4 +1,5 @@
 import { type Server } from "node:http";
+import os from "node:os"; // Import os module
 
 import express, {
   type Express,
@@ -92,5 +93,26 @@ export default async function runApp(
     reusePort: true,
   }, () => {
     log(`serving on port ${port}`);
+    
+    // Log available network interfaces
+    const interfaces = os.networkInterfaces();
+    const addresses: string[] = [];
+    
+    Object.keys(interfaces).forEach((ifaceName) => {
+      interfaces[ifaceName]?.forEach((iface) => {
+        if (iface.family === 'IPv4' && !iface.internal) {
+          addresses.push(iface.address);
+        }
+      });
+    });
+    
+    if (addresses.length > 0) {
+      log(`Available on your network:`);
+      addresses.forEach(addr => {
+        log(`  http://${addr}:${port}`);
+      });
+    } else {
+      log(`Could not determine network address. Try accessing via localhost or check your network settings.`);
+    }
   });
 }
